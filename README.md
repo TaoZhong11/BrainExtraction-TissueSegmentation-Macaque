@@ -1,6 +1,7 @@
 # Brain-Extrain-and-Tissue-Segmentation-Transformer-Models-for-Macaque
 They are trained on large-scale macaque brain data-set.
 The models were built on nnFormer (https://github.com/282857341/nnFormer) and nnUnet (https://github.com/MIC-DKFZ/nnUNet).
+For installation please see nnFormer.
 
 Task504 was built for brain extraction.
 Task505 was built for tissue segmentation.
