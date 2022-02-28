@@ -45,7 +45,7 @@ code：smu1
 
 ## Inference for Brain Extraction
 The inference subject should be located in nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs as "AAAAAA(DATASET_NAME)_BBB(SUBJECT_ID)_CCCC(MODALITY)".
-Now this version only supports T1w modality. So the example file name can be "Cynomolgus_001_0000.nii.gz". We have upload 3 subjects from different sites as examples. For more macaque data please see [PRIMATE-DE](http://fcon_1000.projects.nitrc.org/indi/PRIMEdownloads.html).
+Now this version only supports T1w modality. So the example file name can be "Cynomolgus_001_0000.nii.gz". We have upload 3 subjects from different sites as examples. For more macaque data please see [PRIMatE-DE](http://fcon_1000.projects.nitrc.org/indi/PRIMEdownloads.html).
 
 ```
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs  -o  OUTPUT_PATH  -m  3d_fullres    -t  505  -chk model_best  -f  0/1/2/3
