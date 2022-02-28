@@ -57,6 +57,7 @@ code：smu1
 
 
 ## Inference for Brain Extraction
+This model intends to obtain a brain mask from macaque T1w MRI.
 The inference subject should be located in nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs as "AAAAAA(DATASET_NAME)_BBB(SUBJECT_ID)_CCCC(MODALITY)".
 Now this version only supports T1w modality. So the example file name can be "Cynomolgus_001_0000.nii.gz". We have upload 3 subjects from different sites as examples. For more macaque data please see [PRIMatE-DE](http://fcon_1000.projects.nitrc.org/indi/PRIMEdownloads.html).
 
@@ -65,6 +66,7 @@ nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs
 ```
 By this step we can obtain brain mask, which can be used to obtain macaque brain images for tissue segmentation.
 ## Inference for Tissue Segmentation
+This model would output a 4 class label map for input brain image. The label classes include WM, GM, CSF, and Cerebellum&Brainstem.
 ```
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task504_2macaque/imagesTs  -o  OUTPUT_PATH  -m  3d_fullres    -t  504  -chk model_best  -f  0/1/2/3
 ```
