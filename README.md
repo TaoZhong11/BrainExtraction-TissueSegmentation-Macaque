@@ -30,8 +30,8 @@ Please see nnFormer documents.
 Unzip the downloaded pre-training models.
 the download link is 
 ```
-Link：https://pan.baidu.com/s/1h1h8_DKvve8enyTiIyzfHw 
-Extraction code：xxxx
+Link：https://pan.baidu.com/s/14w_uiQtq38bYjkyeDvWNnw 
+code：smu1
 ```
 
 
