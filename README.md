@@ -39,7 +39,7 @@ code：smu1
 ```
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs  -o  OUTPUT_PATH  -m  3d_fullres    -t  505  -chk model_best  -f  0/1/2/3
 ```
-By this step we can obtain brain mask, which can be used to obtain macaque brain images. These macaque brain images can be used at tissue segmentation.
+By this step we can obtain brain mask, which can be used to obtain macaque brain images for tissue segmentation.
 ## Inference for Tissue Segmentation
 ```
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task504_2macaque/imagesTs  -o  OUTPUT_PATH  -m  3d_fullres    -t  504  -chk model_best  -f  0/1/2/3
