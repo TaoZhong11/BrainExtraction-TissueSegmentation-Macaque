@@ -24,8 +24,6 @@ pip install -e .
 ## Training
 Please see nnFormer documents.
 
-```
-```
 
 ---
 ## Pretrained models
