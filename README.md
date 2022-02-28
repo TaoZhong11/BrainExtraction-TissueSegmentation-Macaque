@@ -39,13 +39,12 @@ Extraction code：xxxx
 
 ## Inference for Brain Extraction
 ```
-```
-
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs  -o  OUTPUT_PATH  -m  3d_fullres    -t  505  -chk model_best  -f  0/1/2/3
+```
 
 ## Inference for Tissue Segmentation
 ```
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task504_2macaque/imagesTs  -o  OUTPUT_PATH  -m  3d_fullres    -t  504  -chk model_best  -f  0/1/2/3
-
+```
 
 
