@@ -1,4 +1,4 @@
-name: nnFormer
+name: Macaque_Transformers
 channels:
   - defaults
 dependencies:
