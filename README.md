@@ -3,10 +3,14 @@ Trained on large scale macaque brain data-set.
 
 Parts of codes are borrowed from [nn-UNet](https://github.com/MIC-DKFZ/nnUNet) and [nn-Former](https://github.com/282857341/nnFormer)
 
-Previous works about macaque MRI:
-Tao Zhong, Fenqiang Zhao, Yuchen Pei, Zhenyuan Ning, Lufan Liao, Zhengwang Wu, Yuyu Niu, Li Wang, Dinggang Shen, Yu Zhang, Gang Li. DIKA-Nets: Domain-invariant knowledge-guided attention networks for brain skull stripping of early developing macaques. Neuroimage, 2021, 227: 117649. 
-Tao Zhong, Jingkuan Wei, Kunhua Wu, Liangjun Chen, Fenqiang Zhao, Yuchen Pei, Ya Wang, Hongjiang Zhang, Zhengwang Wu, Ying Huang, Tengfei Li, Li Wang, Yongchang Chen, Weizhi Ji, Yu Zhang, Gang Li, Yuyu Niu. Longitudinal Brain Atlases for Early Developing Cynomolgus Macaques from Birth to 48 Months of Age. Neuroimage, 2022, 247: 118799.
+Previous works on macaque MRI:
+```
+Tao Zhong, Fenqiang Zhao, Yuchen Pei, Zhenyuan Ning, Lufan Liao, Zhengwang Wu, Yuyu Niu, Li Wang, Dinggang Shen, Yu Zhang, Gang Li. 
+DIKA-Nets: Domain-invariant knowledge-guided attention networks for brain skull stripping of early developing macaques. Neuroimage, 2021, 227: 117649. 
 
+Tao Zhong, Jingkuan Wei, Kunhua Wu, Liangjun Chen, Fenqiang Zhao, Yuchen Pei, Ya Wang, Hongjiang Zhang, Zhengwang Wu, Ying Huang, Tengfei Li, Li Wang, Yongchang Chen, Weizhi Ji, Yu Zhang, Gang Li, Yuyu Niu. 
+Longitudinal Brain Atlases for Early Developing Cynomolgus Macaques from Birth to 48 Months of Age. Neuroimage, 2022, 247: 118799.
+```
 ---
 ## Installation
 #### 1、System requirements
