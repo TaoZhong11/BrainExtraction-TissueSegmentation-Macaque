@@ -27,6 +27,19 @@ source activate Macaque_Transformers
 pip install -e .
 ```
 
+#### 3、Set environment variables
+
+The models need to know where you intend to save raw data and trained models. For this you need to set a few of environment variables：
+```
+gedit ~/.bashrc
+```
+Once the file is open in a text editor, add the following lines to the bottom:
+```
+export nnFormer_raw_data_base="xxx/xxx/xxx/nnFormer_raw_data_base"
+export nnFormer_raw_data="xxx/xxx/xxx/nnFormer_raw_data_base/nnFormer_raw_data"
+export RESULTS_FOLDER_nnFormer="xxx/xxx/xxx/nnFormer_trained_models"
+```
+
 ---
 
 ## Training
