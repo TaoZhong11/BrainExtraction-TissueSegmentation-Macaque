@@ -1,4 +1,4 @@
-# MacaqueFormers: Brain Extraction and Tissue Segmentation for Macaque
+# MacaqueTransformers: Transformer Models for Brain Extraction and Tissue Segmentation of Macaque
 Trained on large scale macaque brain data-set.
 
 Parts of codes are borrowed from [nn-UNet](https://github.com/MIC-DKFZ/nnUNet) and [nn-Former](https://github.com/282857341/nnFormer)
