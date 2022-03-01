@@ -64,9 +64,9 @@ Now this version only supports T1w modality. So the example file name can be "Cy
 ```
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs  -o  OUTPUT_PATH  -m  3d_fullres    -t  505  -chk model_best  (-f 0/1/2/4 if you need to specify model)
 ```
-By this step we can obtain brain mask, which can be used to extract macaque brain images for tissue segmentation.
+By this step we can obtain brain mask. Check the brain mask and manually correct it if necessary. Then it can be used to extract macaque brain images (from with-skull images) for tissue segmentation.
 ## Inference for Tissue Segmentation
-This model would output a 4 class label map for input brain image. The label classes include WM, GM, CSF, and Cerebellum&Brainstem.
+This model would output 4 class label maps, including WM, GM, CSF, and Cerebellum&Brainstem.
 ```
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task504_2macaque/imagesTs  -o  OUTPUT_PATH  -m  3d_fullres    -t  504  -chk model_best  (-f 0/1/2/4 if you need to specify model)
 ```
