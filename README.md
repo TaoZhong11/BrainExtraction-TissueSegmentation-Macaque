@@ -43,7 +43,7 @@ export RESULTS_FOLDER_nnFormer="xxx/xxx/xxx/nnFormer_trained_models"
 ---
 
 ## Training
-Please see nnFormer documents.
+Please see [nn-UNet](https://github.com/MIC-DKFZ/nnUNet) and [nn-Former](https://github.com/282857341/nnFormer).
 
 
 ---
