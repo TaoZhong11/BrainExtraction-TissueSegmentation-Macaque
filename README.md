@@ -64,7 +64,10 @@ Now this version only supports T1w modality. So the example file name can be "Cy
 ```
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs  -o  OUTPUT_PATH  -m  3d_fullres    -t  505  -chk model_best  (-f 0/1/2/3/4 if you need to specify model)
 ```
-By this step we can obtain brain mask. Check the brain mask and manually correct it if necessary. Then it can be used to extract macaque brain images (from with-skull images) for tissue segmentation.
+Brain mask can be generated in this step. Check the brain mask and manually correct it if necessary. Then it can be used to extract macaque brain images (from with-skull images) for tissue segmentation:
+```
+python extract_brain_by_505.py
+```
 ## Inference for Tissue Segmentation
 This model would output 4 class label maps, including WM, GM, CSF, and Cerebellum&Brainstem.
 ```
