@@ -11,6 +11,8 @@ Seg_path = '505_brain_mask/'
 
 files = os.listdir(T1_path)
 output_path = 'nnFormer_raw_data_base/nnFormer_raw_data/Task504_2macaque/imagesTs/'
+if not os.path.exists(output_path):
+    os.makedirs(dirs)
 subjects = []
 
 for subject in files:
