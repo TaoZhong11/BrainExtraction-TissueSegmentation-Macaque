@@ -4,13 +4,13 @@ import numpy as np
 
 
 
-T1_path = 'nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs'
+T1_path = 'nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs/'
 # T2_path = '../data//T2/'
 Seg_path = '505_brain_mask/'
 
 
 files = os.listdir(T1_path)
-output_path = 'nnFormer_raw_data_base/nnFormer_raw_data/Task504_2macaque/imagesTs'
+output_path = 'nnFormer_raw_data_base/nnFormer_raw_data/Task504_2macaque/imagesTs/'
 subjects = []
 
 for subject in files:
