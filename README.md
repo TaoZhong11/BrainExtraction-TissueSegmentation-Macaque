@@ -12,11 +12,11 @@ Tao Zhong, Jingkuan Wei, Kunhua Wu, Liangjun Chen, Fenqiang Zhao, Yuchen Pei, Ya
 Longitudinal Brain Atlases for Early Developing Cynomolgus Macaques from Birth to 48 Months of Age. Neuroimage, 2022, 247: 118799.
 ```
 ---
-## Docker (We strongly recommend you use docker for inference)
+## Docker (We strongly recommend you use docker for inference, coming soon)
 #### 1、Pull
 The docker image has been uploaded onto DockerHub, download it by using the following command
 ```
-docker pull 
+
 ```
 
 ## Installation (If you don't use docker)
