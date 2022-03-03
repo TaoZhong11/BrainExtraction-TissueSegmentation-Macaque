@@ -12,12 +12,15 @@ Tao Zhong, Jingkuan Wei, Kunhua Wu, Liangjun Chen, Fenqiang Zhao, Yuchen Pei, Ya
 Longitudinal Brain Atlases for Early Developing Cynomolgus Macaques from Birth to 48 Months of Age. Neuroimage, 2022, 247: 118799.
 ```
 ---
-## Docker (We strongly recommend you use docker for inference. Coming soon.)
+## Docker (Highly recommended.)
 #### 1、Pull
 The docker image has been uploaded onto DockerHub, download it by using the following command
 ```
-
+docker pull wxyabc/bets_formers:1.0
+docker run -it --gpus=all --ipc=host --name "NAME" wxyabc/bets_formers:1.0 /bin/bash
 ```
+#### 2、Inference
+Follow the inference instruction in the bottom for brain extraction and tissue segmentation.
 
 ## Installation (If you don't use docker.)
 #### 1、System requirements
@@ -46,7 +49,13 @@ export nnFormer_raw_data_base="xxx/xxx/xxx/nnFormer_raw_data_base"
 export nnFormer_raw_data="xxx/xxx/xxx/nnFormer_raw_data_base/nnFormer_raw_data"
 export RESULTS_FOLDER_nnFormer="xxx/xxx/xxx/nnFormer_trained_models"
 ```
-
+#### 4、 Pretrained models
+Unzip the downloaded pre-training models.
+the download link is 
+```
+Link：https://pan.baidu.com/s/14w_uiQtq38bYjkyeDvWNnw 
+code：smu1
+```
 ---
 
 ## Training
@@ -54,13 +63,6 @@ Please see [nn-UNet](https://github.com/MIC-DKFZ/nnUNet) and [nn-Former](https:/
 
 
 ---
-## Pretrained models
-Unzip the downloaded pre-training models.
-the download link is 
-```
-Link：https://pan.baidu.com/s/14w_uiQtq38bYjkyeDvWNnw 
-code：smu1
-```
 
 
 ## Inference for Brain Extraction
