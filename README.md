@@ -58,13 +58,6 @@ code：smu1
 ```
 ---
 
-## Training
-Please see [nn-UNet](https://github.com/MIC-DKFZ/nnUNet) and [nn-Former](https://github.com/282857341/nnFormer).
-
-
----
-
-
 ## Inference for Brain Extraction
 This model intends to obtain a brain mask from macaque T1w MRI.
 The inference subject should be located in nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs as "AAAAAA(DATASET_NAME)_BBB(SUBJECT_ID)_CCCC(MODALITY)".
@@ -82,5 +75,10 @@ This model would output 4 class label maps, including WM, GM, CSF, and Cerebellu
 ```
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task504_2macaque/imagesTs  -o  OUTPUT_PATH  -m  3d_fullres    -t  504  -chk model_best  (-f 0/1/2/3/4 if you need to specify model)
 ```
+---
+## Training
+Please see [nn-UNet](https://github.com/MIC-DKFZ/nnUNet) and [nn-Former](https://github.com/282857341/nnFormer).
+
+
 
 
