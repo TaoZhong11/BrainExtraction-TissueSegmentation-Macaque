@@ -3,7 +3,7 @@ Trained on large scale macaque brain data-set from different sites.
 
 Parts of codes are borrowed from [nn-UNet](https://github.com/MIC-DKFZ/nnUNet) and [nn-Former](https://github.com/282857341/nnFormer)
 
-If you use these models, pleast cite our previous works on macaque brain MRI:
+If you use these models, pleast cite our previous works on macaque brain MRI, which provide the training data:
 ```
 Tao Zhong, Fenqiang Zhao, Yuchen Pei, Zhenyuan Ning, Lufan Liao, Zhengwang Wu, Yuyu Niu, Li Wang, Dinggang Shen, Yu Zhang, Gang Li. 
 DIKA-Nets: Domain-invariant knowledge-guided attention networks for brain skull stripping of early developing macaques. Neuroimage, 2021, 227: 117649. 
