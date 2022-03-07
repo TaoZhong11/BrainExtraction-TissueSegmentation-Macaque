@@ -12,7 +12,7 @@ Tao Zhong, Jingkuan Wei, Kunhua Wu, Liangjun Chen, Fenqiang Zhao, Yuchen Pei, Ya
 Longitudinal Brain Atlases for Early Developing Cynomolgus Macaques from Birth to 48 Months of Age. Neuroimage, 2022, 247: 118799.
 ```
 ---
-## Docker (Highly recommended.)
+## Docker (Highly recommended)
 #### 1、Pull
 The docker image has been uploaded onto DockerHub, download it by using the following command
 ```
@@ -22,7 +22,7 @@ docker run -it --gpus=all --ipc=host --name "NAME" wxyabc/bets_formers:1.0 /bin/
 #### 2、Inference
 Follow the inference instruction in the bottom for brain extraction and tissue segmentation.
 
-## Installation (If you don't use docker.)
+## Installation (If you don't use docker)
 #### 1、System requirements
 This software was originally designed and run on a system running Ubuntu 18.01, with Python 3.6, PyTorch 1.8.1, and CUDA 10.1. For a full list of software packages and version numbers, see the Conda environment file `environment.yml`. 
 
