@@ -3,7 +3,7 @@ Trained on large scale macaque brain data-set from different sites.
 
 Parts of codes are borrowed from [nn-UNet](https://github.com/MIC-DKFZ/nnUNet) and [nn-Former](https://github.com/282857341/nnFormer)
 
-Previous works on macaque MRI:
+If you use these models, pleast cite our previous works on macaque brain MRI:
 ```
 Tao Zhong, Fenqiang Zhao, Yuchen Pei, Zhenyuan Ning, Lufan Liao, Zhengwang Wu, Yuyu Niu, Li Wang, Dinggang Shen, Yu Zhang, Gang Li. 
 DIKA-Nets: Domain-invariant knowledge-guided attention networks for brain skull stripping of early developing macaques. Neuroimage, 2021, 227: 117649. 
@@ -75,9 +75,14 @@ This model would output 4 class label maps, including WM, GM, CSF, and Cerebellu
 ```
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task504_2macaque/imagesTs  -o  OUTPUT_PATH  -m  3d_fullres    -t  504  -chk model_best  (-f 0/1/2/3/4 if you need to specify model)
 ```
----
-## Training
-Please see [nn-UNet](https://github.com/MIC-DKFZ/nnUNet) and [nn-Former](https://github.com/282857341/nnFormer).
+
+## Ensemble
+We prepare 5 models for each task. So you can ensemble the predictions from several models with the following command:
+```
+nnFormer_ensemble -f FOLDER1 FOLDER2 ... -o OUTPUT_FOLDER 
+```
+For more details please see [nn-UNet].(https://github.com/MIC-DKFZ/nnUNet)
+
 
 
 
