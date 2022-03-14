@@ -30,6 +30,7 @@ for subject in files:
     output_array = T1_array*Seg_array
     output_array = output_array.astype(np.int16)
     output_img  = sitk.GetImageFromArray(output_array)
+    output_img.CopyInformation(T1_img)
     sitk.WriteImage(output_img, output_path + T1_name)
 
     
