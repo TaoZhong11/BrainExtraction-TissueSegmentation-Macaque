@@ -1,9 +1,9 @@
 ## BETS_Formers: Brain Extraction and Tissue Segmentation for Macaque using Transformer Models
-Trained on large scale macaque brain data-set from different sites.
+Models were trained on large scale macaque brain data-set from different sites.
 
 Parts of codes are borrowed from [nn-UNet](https://github.com/MIC-DKFZ/nnUNet) and [nn-Former](https://github.com/282857341/nnFormer)
 
-If you use these models, pleast cite our previous works on macaque brain MRI, which provide the training data:
+If you use these models, please cite our previous works on macaque brain MRI, which provide the training data:
 ```
 Tao Zhong, Fenqiang Zhao, Yuchen Pei, Zhenyuan Ning, Lufan Liao, Zhengwang Wu, Yuyu Niu, Li Wang, Dinggang Shen, Yu Zhang, Gang Li. 
 DIKA-Nets: Domain-invariant knowledge-guided attention networks for brain skull stripping of early developing macaques. Neuroimage, 2021, 227: 117649. 
@@ -61,7 +61,7 @@ code：smu1
 ## Inference for Brain Extraction
 This model intends to obtain a brain mask from macaque T1w MRI.
 The inference subject should be located in nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs as "AAAAAA(DATASET_NAME)_BBB(SUBJECT_ID)_CCCC(MODALITY)".
-Now this version only supports T1w modality. So the example file name can be "Cynomolgus_001_0000.nii.gz". We have upload 3 subjects from different sites as examples. For more macaque data please see [PRIMatE-DE](http://fcon_1000.projects.nitrc.org/indi/PRIMEdownloads.html).
+Now this version only supports T1w modality. So the example file name can be "Cynomolgus_001_0000.nii.gz". We have uploaded 3 subjects from different sites as examples. For more macaque data please see [PRIMatE-DE](http://fcon_1000.projects.nitrc.org/indi/PRIMEdownloads.html).
 
 ```
 nnFormer_predict -i nnFormer_raw_data_base/nnFormer_raw_data/Task505_ss/imagesTs  -o  505_brain_mask  -m  3d_fullres    -t  505  -chk model_best  (-f 0/1/2/3/4 if you need to specify model)
