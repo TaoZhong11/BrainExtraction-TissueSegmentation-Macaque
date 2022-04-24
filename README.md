@@ -16,8 +16,8 @@ Longitudinal Brain Atlases for Early Developing Cynomolgus Macaques from Birth t
 #### 1、Pull
 The docker image has been uploaded onto DockerHub, download it by using the following command
 ```
-docker pull wxyabc/bets_formers:1.0
-docker run -it --gpus=all --ipc=host --name "NAME" wxyabc/bets_formers:1.0 /bin/bash
+docker pull wxyabc/bets_formers:1.1
+docker run -it --gpus=all --ipc=host --name "NAME" wxyabc/bets_formers:1.1 /bin/bash
 ```
 #### 2、Inference
 Follow the inference instruction in the bottom for brain extraction and tissue segmentation.
